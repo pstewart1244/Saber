@@ -1,0 +1,4 @@
+create player BennyRodriguez (.290/.412/.411)
+print BennyRodriguez OPS
+update BennyRodriguez (.350/.482/.450)
+print BennyRodriguez OPS

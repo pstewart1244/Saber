@@ -1,0 +1,4 @@
+create player BennyRodriguez (.290/.412/.411)
+create player BiggieFailure (.090193/.10/.203115)
+create team TestRoster (BennyRodriguez,BiggieFailure)
+simulate season TestWithBiggie for TestRoster

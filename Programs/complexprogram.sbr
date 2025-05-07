@@ -1,0 +1,20 @@
+create player FernandoTatisJr (.328/.399/.574)
+simulate season Tatis2025 for FernandoTatisJr
+
+create player LuisArraez (.306/.336/.444)
+create player MannyMachado (.295/.360/.459)
+create player JacksonMerril (.292/.326/.500)
+create player XanderBogaerts (.243/.333/.348)
+create player JakeCronenworth (.241/.324/.390)
+create player GavinSheets (.278/.340/.456)
+create player TylerWade (.217/.285/.239)
+create player EliasDiaz (.226/.314/.387)
+
+create team Padres (FernandoTatisJr,LuisArraez,MannyMachado,JacksonMerril,XanderBogaerts,JakeCronenworth,GavinSheets,TylerWade,EliasDiaz)
+simulate season Padres2025 for Padres
+
+create player TedFreakinWilliams (.406/.553/.735)
+print TedFreakinWilliams OPS
+
+create team UnstoppablePadres (FernandoTatisJr,LuisArraez,MannyMachado,JacksonMerril,XanderBogaerts,JakeCronenworth,GavinSheets,TedFreakinWilliams,EliasDiaz)
+simulate season EpicPadres2025 for UnstoppablePadres
