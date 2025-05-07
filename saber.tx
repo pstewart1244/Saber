@@ -1,0 +1,66 @@
+Program:
+  statements*=Statement
+;
+
+Statement:
+  Creation|Update|Print
+;
+
+Creation:
+  PlayerCreation|TeamCreation|SimulationCreation
+;
+
+Update:
+  'update' name=ID 'stats' '(' ba=FLOAT '/' obp=FLOAT '/' slg=FLOAT ')'
+;
+
+Print:
+  'print' name=ID stat=ID?
+;
+
+Player:
+  name=ID
+
+  BA=FLOAT
+  OBP=FLOAT
+  SLG=FLOAT
+
+  OPS=FLOAT
+;
+
+Team:
+  name=ID
+
+  players+=Player
+
+  BA=FLOAT
+  OBP=FLOAT
+  SLG=FLOAT
+
+  OPS=FLOAT
+;
+
+Simulation:
+  name=ID
+
+  BA=FLOAT
+  OBP=FLOAT
+  SLG=FLOAT
+  OPS=FLOAT
+
+  AB=INT?
+
+  (hits=INT | wins=INT)
+;
+
+PlayerCreation:
+  'create player' name=ID '(' ba=FLOAT '/' obp=FLOAT '/' slg=FLOAT ')'
+;
+
+TeamCreation:
+  'create team' name=ID '(' roster+=ID[','] ')'
+;
+
+SimulationCreation:
+  'simulate season' name=ID 'for' var=ID
+;
